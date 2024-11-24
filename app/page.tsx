@@ -1,10 +1,7 @@
 import {
-  Globe,
   Flag,
   Trophy,
   Brain,
-  LogIn,
-  User,
   Users,
   Medal,
   Target,
@@ -40,7 +37,9 @@ function LandingPage() {
           <div className="p-6 border-4 bg-brandRed text-brandBeige border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:-rotate-2 transition-transform">
             <Flag className="h-16 w-16 text-brandBeige mb-4" />
             <h4 className="text-2xl font-bold mb-2">Guess the Flag</h4>
-            <p className="font-semibold opacity-95">Can you identify these flags?</p>
+            <p className="font-semibold opacity-95">
+              Can you identify these flags?
+            </p>
           </div>
           <div className="p-6 border-4 text-brandBlue border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:rotate-2 transition-transform">
             <Brain className="h-16 w-16 mb-4" />
@@ -54,6 +53,43 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      <section className="py-16 px-8 border-y-4 bg-brandRed border-black">
+        <div className="max-w-9xl mx-auto">
+          <h3 className="text-4xl font-black mb-12 transform -rotate-1 text-brandBeige">
+            WHY PLAY AL-ALAM?
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
+              <Users className="h-12 w-12 mb-4 text-brandRed" />
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">Challenge Friends</h4>
+              <p className="font-bold text-brandBlue">
+                Create private rooms and compete with friends in real-time!
+              </p>
+            </div>
+            <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
+              <Medal className="h-12 w-12 mb-4 text-brandRed" />
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">Earn Achievements</h4>
+              <p className="font-bold text-brandBlue">
+                Unlock badges as you master different regions and categories!
+              </p>
+            </div>
+            <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
+              <Target className="h-12 w-12 mb-4 text-brandRed" />
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">Daily Challenges</h4>
+              <p className="font-bold text-brandBlue">
+                New geography puzzles every day to test your skills!
+              </p>
+            </div>
+            <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
+              <Sparkles className="h-12 w-12 mb-4 text-brandRed" />
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">Learn As You Play</h4>
+              <p className="font-bold text-brandBlue">
+                Discover interesting facts about each country you encounter!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
