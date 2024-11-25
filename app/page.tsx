@@ -7,7 +7,6 @@ import {
   Target,
   Sparkles,
   Globe2,
-  Star,
 } from "lucide-react";
 
 import Header from "./components/Header";
@@ -15,7 +14,6 @@ import Header from "./components/Header";
 function LandingPage() {
   return (
     <>
-      <Header />
       <section className="text-center px-4 relative">
         <h2 className="text-6xl font-black mb-4 transform -rotate-1 text-brandBlue">
           EXPLORE THE WORLD
