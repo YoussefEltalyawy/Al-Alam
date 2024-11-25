@@ -6,6 +6,8 @@ import {
   Medal,
   Target,
   Sparkles,
+  Globe2,
+  Star,
 } from "lucide-react";
 
 import Header from "./components/Header";
@@ -61,28 +63,36 @@ function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
               <Users className="h-12 w-12 mb-4 text-brandRed" />
-              <h4 className="text-2xl font-black mb-2 text-brandBlue">Challenge Friends</h4>
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">
+                Challenge Friends
+              </h4>
               <p className="font-bold text-brandBlue">
                 Create private rooms and compete with friends in real-time!
               </p>
             </div>
             <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
               <Medal className="h-12 w-12 mb-4 text-brandRed" />
-              <h4 className="text-2xl font-black mb-2 text-brandBlue">Earn Achievements</h4>
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">
+                Earn Achievements
+              </h4>
               <p className="font-bold text-brandBlue">
                 Unlock badges as you master different regions and categories!
               </p>
             </div>
             <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
               <Target className="h-12 w-12 mb-4 text-brandRed" />
-              <h4 className="text-2xl font-black mb-2 text-brandBlue">Daily Challenges</h4>
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">
+                Daily Challenges
+              </h4>
               <p className="font-bold text-brandBlue">
                 New geography puzzles every day to test your skills!
               </p>
             </div>
             <div className="bg-white p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform hover:translate-x-2 hover:-translate-y-2 transition-transform">
               <Sparkles className="h-12 w-12 mb-4 text-brandRed" />
-              <h4 className="text-2xl font-black mb-2 text-brandBlue">Learn As You Play</h4>
+              <h4 className="text-2xl font-black mb-2 text-brandBlue">
+                Learn As You Play
+              </h4>
               <p className="font-bold text-brandBlue">
                 Discover interesting facts about each country you encounter!
               </p>
@@ -90,6 +100,29 @@ function LandingPage() {
           </div>
         </div>
       </section>
+      <footer className="border-t-4 border-black bg-white py-12 px-4">
+        <div className="max-w-9xl mx-8 flex justify-between gap-8">
+          {/* Company Info */}
+          <div className="space-y-4">
+            <h4 className="flex items-center gap-2 text-xl font-black">
+              <Globe2 className="h-6 w-6" />
+              AL-ALAM
+            </h4>
+            <p className="font-bold">Making geography fun since 2024</p>
+            <div className="space-y-4">
+              <h4 className="text-md font-semibold">Support:</h4>
+              talyawy@proton.me
+            </div>
+          </div>
+
+          {/* Support */}
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-12 pt-4 border-t-2 border-black text-center font-bold">
+          <p>&copy; 2024 AL-ALAM. All rights reserved.</p>
+        </div>
+      </footer>
     </>
   );
 }
