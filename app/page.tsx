@@ -8,13 +8,14 @@ import {
   Sparkles,
   Globe2,
 } from "lucide-react";
+import Link from "next/link";
 
-import Header from "./components/Header";
+
 
 function LandingPage() {
   return (
     <>
-      <section className="text-center px-4 relative">
+      <section className="text-center px-4 relative mt-[180px]">
         <h2 className="text-6xl font-black mb-4 transform -rotate-1 text-brandBlue">
           EXPLORE THE WORLD
           <br />
@@ -23,9 +24,11 @@ function LandingPage() {
         <p className="text-2xl font-normal mb-8 transform rotate-1">
           Test your geography knowledge & become a world master
         </p>
-        <button className="px-8 py-4 text-2xl font-bold bg-brandRed text-brandBeige border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all transform -rotate-2">
-          PLAY NOW!
-        </button>
+        <Link href="/dashboard">
+          <button className="px-8 py-4 text-2xl font-bold bg-brandRed text-brandBeige border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all transform -rotate-2">
+            PLAY NOW!
+          </button>
+        </Link>
       </section>
 
       {/* Game Modes */}
